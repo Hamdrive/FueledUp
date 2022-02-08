@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FueledUp | Home</title>
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-
     <!-- PowertrainUI library -->
     <link
       rel="stylesheet"
@@ -22,8 +14,50 @@
   </head>
   <body>
       <div class="wrapper">
-          <div class="header">
-              <header></header>
+        <div class="header pos-st top-left-pos py-md">
+            <header class="max-width-1200 nav-main flex-row px-md mx-auto">
+              <div class="nav-logo">
+                <a href="../../index.html">FueledUp</a>
+              </div>
+              <div class="search-input">
+                <div class="fas fa-search search-icon"></div>
+                <label for="searchbar"></label>
+                <input
+                  class="input-round input-md border-2"
+                  type="text"
+                  name="searchbar"
+                  id="searchbar"
+                  placeholder="Search products..."
+                />
+              </div>
+              <button class="hamburger">
+                <i class="fas fa-bars"></i>
+              </button>
+              <nav class="nav-list">
+                <button class="nav-list-close-btn">
+                  <i class="fas fa-2x fa-times"></i>
+                </button>
+                <ul class="nav-menu h-100">
+                  <li class="nav-item">
+                    <a href="../../index.html" class="ecom-nav-cta btn btn-md">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="badge">
+                      <div class="fas fa-heart badge-icon"></div>
+                      <div class="badge-count top-right flex-center badge-yellow">2</div>
+                      <a href="#" class="ecom-heart-icon"></a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="badge">
+                      <div class="fas fa-shopping-cart badge-icon"></div>
+                      <div class="badge-count top-right flex-center badge-yellow">9+</div>
+                      <a href="#" class="ecom-basket-icon"></a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </header>
           </div>
           <div class="main">
               <main>
