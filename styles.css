@@ -1,5 +1,5 @@
 .wrapper {
-    background-color: var(--primary-extra-light-color);
+    background-color: rgba(124, 58, 237, 0.2);
 }
 
 .hero-section{
@@ -38,4 +38,44 @@
 .footer{
     background-color: var(--secondary-color);
     color: var(--secondary-light-color);
+}
+
+.category{
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--primary-extra-light-color);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.blur {
+    filter: opacity(40%);
+    height: auto;
+}
+
+.cover-text{
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+}
+
+.category:hover{
+    background-color: var(--color-white);
+}
+
+.category:hover .blur{
+    filter: opacity(90%);
+}
+
+@media screen and (max-width: 768px) {
+    .mob-grid-1{
+        grid-template-columns: 1fr;
+    }
 }
