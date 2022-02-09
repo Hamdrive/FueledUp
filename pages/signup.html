@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FueledUp | Home</title>
 
+    
     <!-- PowertrainUI library -->
     <link
-      rel="stylesheet"
-      href="https://powertrain-ui.netlify.app/styles.css"
+    rel="stylesheet"
+    href="https://powertrain-ui.netlify.app/styles.css"
     />
-
+    
     <!-- Page CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    
   </head>
   <body>
     <div class="wrapper">
@@ -71,7 +73,7 @@
             </ul>
           </nav>
         </header>
-        <div class="mob-search-input">
+        <div class="mob-search-input hide">
           <div class="fas fa-search mob-search-icon"></div>
           <label for="searchbar"></label>
           <input
@@ -83,112 +85,93 @@
           />
         </div>
       </div>
-      <div class="main">
-        <main class="">
-          <section class="hero-section">
-            <div class="hero">
-              <img class="" src="./assets/hero-image.jpg" alt="hero-image" />
-            </div>
-            <div class="hero-overlay pos-ab">
-              <h1>For the love of <em>racing</em></h1>
-              <h2>Driven by fans, <em>FueledUp</em> by fans.</h2>
-            </div>
-          </section>
-          <section class="my-2 px-lg">
-            <section class="categories">
-              <h3 class="">
-                Check out various <span class="imp-word">categories</span>
-              </h3>
-              <div class="category-list flex-wrap flex-row gap-1">
-                <div class="category flex-center flex-grow-1">
-                  <img
-                    class="w-100 blur"
-                    src="./assets/category-7.png"
-                    alt=""
-                  />
-                  <div class="pos-ab cover-text txt-lg txt-bold">Bottles</div>
-                </div>
-                <div class="category flex-center flex-grow-1">
-                  <img
-                    class="w-100 blur"
-                    src="./assets/category-2.png"
-                    alt=""
-                  />
-                  <div class="pos-ab cover-text txt-lg txt-bold">Masks</div>
-                </div>
-                <div class="category flex-center flex-grow-1">
-                  <img
-                    class="w-100 blur"
-                    src="./assets/category-3.png"
-                    alt=""
-                  />
-                  <div class="pos-ab cover-text txt-lg txt-bold">Clothing</div>
-                </div>
-                <div class="category flex-center flex-grow-1">
-                  <img
-                    class="w-100 blur"
-                    src="./assets/category-4.png"
-                    alt=""
-                  />
-                  <div class="pos-ab cover-text txt-lg txt-bold">Bags</div>
-                </div>
-                <div class="category flex-center flex-grow-1">
-                  <img
-                    class="w-100 blur"
-                    src="./assets/category-5.png"
-                    alt=""
-                  />
-                  <div class="pos-ab cover-text txt-lg txt-bold">Eyewear</div>
-                </div>
-                <div class="category flex-center flex-grow-1">
-                  <img
-                    class="w-100 blur"
-                    src="./assets/category-6.png"
-                    alt=""
-                  />
-                  <div class="pos-ab cover-text txt-lg txt-bold">Headwear</div>
-                </div>
-                <div class="category flex-center flex-grow-1">
-                  <img
-                    class="w-100 blur"
-                    src="./assets/category-1.png"
-                    alt=""
-                  />
-                  <div class="pos-ab cover-text txt-lg txt-bold">Models</div>
-                </div>
-              </div>
-            </section>
-            <section class="recent-products py-md">
-              <h3 class="">
-                Browse various <span class="imp-word">collections</span>...
-              </h3>
-              <div class="collections flex-wrap flex-row gap-1 mx-auto">
-                <div class="category flex-center flex-grow-1">
-                  <img
-                    class="w-100 blur"
-                    src="./assets/collection-1.png"
-                    alt=""
-                  />
-                  <div
-                    class="pos-ab collection-cover-text px-sm txt-lg txt-bold"
+      <div class="main my-2">
+        <main class="px-md">
+          <section class="sign-up-page">
+            <div class="sign-up-modal m-auto form-border py-md">
+              <form class="form px-lg">
+                <i
+                  class="far fa-2x fa-times-circle sign-up-close-btn pos-ab top-right-pos"
+                ></i>
+                <h2 class="sign-up-title txt-bold"><em>Sign-up</em></h2>
+                <div class="input-section">
+                  <label for="input" class="form-input input-required"
+                    >Email ID</label
                   >
-                    Clearance SALE
+                  <input
+                    type="text"
+                    class="input-corner input-md border-2"
+                    name="input"
+                    id="input"
+                    placeholder="john.doe@email.com"
+                  />
+                </div>
+                <div class="input-section">
+                  <label for="input" class="form-input input-required"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="input-corner input-md border-2"
+                    name="input"
+                    id="input"
+                    placeholder="***********"
+                  />
+                </div>
+                <div class="input-section">
+                  <label for="input" class="form-input input-required"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    class="input-corner input-md border-2"
+                    name="input"
+                    id="input"
+                    placeholder="***********"
+                  />
+                </div>
+                <div class="input-checkbox">
+                  <div>
+                    <input
+                      type="checkbox"
+                      class="checkbox"
+                      name="agree"
+                      id="input"
+                    />
+                    <label for="input" class="form-input input-required txt-reg"
+                      >I agree to the Terms & Conditions</label
+                    >
+                    <div
+                      class="input-validation input-validation-md input-validation-success validate"
+                    >
+                      <i class="fas fa-check-circle validation-icon"></i>Looks
+                      good!
+                    </div>
+                    <div
+                      class="input-validation input-validation-md input-validation-fail validate"
+                    >
+                      <i class="fas fa-times-circle validation-icon"></i>Please
+                      agree to the above
+                    </div>
                   </div>
                 </div>
-                <div class="category flex-center flex-grow-1">
-                  <img
-                    class="w-100 blur"
-                    src="./assets/collection-2.png"
-                    alt=""
-                  />
-                  <div
-                    class="pos-ab collection-cover-text px-sm txt-lg txt-bold"
-                  >
-                    2022 Season Apparel
-                  </div>
-                </div>
+
+                <button
+                  class="btn btn-cta btn-md submit-btn txt-bold txt-reg w-100 mb-1"
+                  type="submit"
+                >
+                  Sign-up
+                </button>
+              </form>
+              <div>
+                <a
+                  href="#"
+                  class="dis-flex flex-center color-prim txt-reg txt-semibold"
+                  >Already have an account?
+                  <i class="fas fa-chevron-circle-right ml-1"></i
+                ></a>
               </div>
-            </section>
+            </div>
           </section>
         </main>
       </div>
