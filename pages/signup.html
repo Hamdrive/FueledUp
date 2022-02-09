@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FueledUp | Home</title>
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../css/signup.css" />
+
+    <!-- PowertrainUI library -->
+    <link
+      rel="stylesheet"
+      href="https://powertrain-ui.netlify.app/styles.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header pos-st top-left-pos py-md">
+        <header class="max-width-1200 nav-main flex-row px-md mx-auto">
+          <div class="nav-logo">
+            <a href="../../index.html">FueledUp</a>
+          </div>
+          <div class="search-input">
+            <div class="fas fa-search search-icon"></div>
+            <label for="searchbar"></label>
+            <input
+              class="input-round input-md border-2"
+              type="text"
+              name="searchbar"
+              id="searchbar"
+              placeholder="Search products..."
+            />
+          </div>
+          <button class="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav class="nav-list">
+            <button class="nav-list-close-btn">
+              <i class="fas fa-2x fa-times"></i>
+            </button>
+            <ul class="nav-menu h-100">
+              <li class="nav-item">
+                <a href="../../index.html" class=""
+                  ><button class="btn btn-sm btn-outline px-md">
+                    Login
+                  </button></a
+                >
+              </li>
+              <li class="nav-item">
+                <div class="badge">
+                  <div class="fas fa-heart badge-icon txt-md px-sm"></div>
+                  <div class="badge-count top-right flex-center badge-yellow">
+                    0
+                  </div>
+                  <a href="#" class="ecom-heart-icon"></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="badge">
+                  <div
+                    class="fas fa-shopping-cart badge-icon txt-md px-sm"
+                  ></div>
+                  <div class="badge-count top-right flex-center badge-yellow">
+                    0
+                  </div>
+                  <a href="#" class="ecom-basket-icon"></a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="mob-search-input hide">
+          <div class="fas fa-search mob-search-icon"></div>
+          <label for="searchbar"></label>
+          <input
+            class="input-round input-md border-2"
+            type="text"
+            name="searchbar"
+            id="searchbar"
+            placeholder="Search products..."
+          />
+        </div>
+      </div>
+      <div class="main my-2">
+        <main class="px-md">
+          <section class="sign-up-page">
+            <div class="sign-up-modal m-auto form-border py-md">
+              <form class="form px-lg">
+                <i class="far fa-2x fa-times-circle sign-up-close-btn pos-ab top-right-pos"></i>
+                <h2 class="sign-up-title txt-bold"><em>Sign-up</em></h2>
+                <div class="input-section">
+                  <label for="input" class="form-input input-required"
+                    >Username</label
+                  >
+                  <input
+                    type="text"
+                    class="input-corner input-md border-2"
+                    name="input"
+                    id="input"
+                    placeholder="john.doe@email.com"
+                  />
+                </div>
+                <div class="input-section">
+                  <label for="input" class="form-input input-required"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="input-corner input-md border-2"
+                    name="input"
+                    id="input"
+                    placeholder="***********"
+                  />
+                </div>
+                <div class="input-section">
+                  <label for="input" class="form-input input-required"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    class="input-corner input-md border-2"
+                    name="input"
+                    id="input"
+                    placeholder="***********"
+                  />
+                </div>
+                <div class="input-checkbox">
+                  <div>
+                    <input
+                      type="checkbox"
+                      class="checkbox"
+                      name="agree"
+                      id="input"
+                    />
+                    <label for="input" class="form-input input-required txt-reg"
+                      >I agree to the Terms & Conditions</label
+                    >
+                    <div
+                      class="input-validation input-validation-md input-validation-success validate"
+                    >
+                      <i class="fas fa-check-circle validation-icon"></i>Looks
+                      good!
+                    </div>
+                    <div
+                      class="input-validation input-validation-md input-validation-fail validate"
+                    >
+                      <i class="fas fa-times-circle validation-icon"></i>Please
+                      agree to the above
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-cta btn-md submit-btn txt-bold txt-reg w-100 mb-1"
+                  type="submit"
+                >
+                  Sign-up
+                </button>
+              </form>
+              <div>
+                <a href="#" class="dis-flex flex-center
+                 color-prim txt-reg txt-semibold"
+                  >Already have an account?
+                  <i class="fas fa-chevron-circle-right ml-1"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="py-md footer footer-doc">
+        <footer
+          class="max-width-1200 grid grid-cols-2 gap-2 grid-ver-center mx-auto px-lg"
+        >
+          <div class="footer-info">
+            <div class="footer-social py-sm">Quick Links</div>
+            <ul class="footer-social-icons grid grid-col-1 gap-1 py-sm">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">My Cart</a>
+              </li>
+              <li>
+                <a href="#">My Wishlist</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-brief">
+            <div class="footer-social py-sm">Socials</div>
+            <ul class="footer-social-icons dis-flex gap-2 py-sm">
+              <li>
+                <a href="https://github.com/Hamdrive"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/itsHamhere"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/hamza-husein/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://peerlist.io/hamza"
+                  ><i class="fas fa-parking"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="py-sm">
+              Designed with 💚 by <strong>Hamza Husein</strong>
+            </div>
+            <div class="py-sm">© FueledUp, 2022 All rights reserved.</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

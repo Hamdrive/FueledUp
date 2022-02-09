@@ -1,0 +1,50 @@
+@import url("./index.css");
+
+.sign-up-page {
+    min-height: 80vh;
+    position: relative;
+}
+
+.sign-up-modal {
+    max-width: 30rem;
+    margin: auto;
+    position: relative;
+}
+
+.m-auto {
+}
+
+.w-100{
+    width: 100%;
+}
+
+.form-border{
+    border: 2px solid var(--primary-dark-color);
+    border-radius: var(--radius-extra-large);
+}
+
+.mb-1{
+    margin-bottom: var(--size-9);
+}
+
+.sign-up-title{
+    border-bottom: 2px solid var(--primary-dark-color);
+    padding: var(--size-5);
+}
+
+.hide {
+    display: none;
+}
+
+.color-prim {
+    color: var(--primary-dark-color);
+}
+
+.sign-up-close-btn {
+    transform: translate(-100%, 100%);
+    cursor: pointer;
+}
+
+.btn-cta {
+    background-color: var(--badge-yellow);
+}
