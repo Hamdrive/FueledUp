@@ -42,24 +42,24 @@
             </button>
             <ul class="nav-menu h-100">
               <li class="nav-item">
-                <a href="../../index.html" class="ecom-nav-cta btn btn-sm"
-                  >Login</a
+                <a href="../../index.html" class=""
+                  ><button class="btn btn-sm btn-outline px-md">Login</button></a
                 >
               </li>
               <li class="nav-item">
                 <div class="badge">
-                  <div class="fas fa-heart badge-icon txt-md"></div>
+                  <div class="fas fa-heart badge-icon txt-md px-sm"></div>
                   <div class="badge-count top-right flex-center badge-yellow">
-                    2
+                    0
                   </div>
                   <a href="#" class="ecom-heart-icon"></a>
                 </div>
               </li>
               <li class="nav-item">
                 <div class="badge">
-                  <div class="fas fa-shopping-cart badge-icon txt-md"></div>
+                  <div class="fas fa-shopping-cart badge-icon txt-md px-sm"></div>
                   <div class="badge-count top-right flex-center badge-yellow">
-                    9+
+                    0
                   </div>
                   <a href="#" class="ecom-basket-icon"></a>
                 </div>
@@ -67,7 +67,18 @@
             </ul>
           </nav>
         </header>
-      </div>
+        <div class="mob-search-input">
+            <div class="fas fa-search mob-search-icon"></div>
+            <label for="searchbar"></label>
+            <input
+              class="input-round input-md border-2"
+              type="text"
+              name="searchbar"
+              id="searchbar"
+              placeholder="Search products..."
+            />
+        </div>
+    </div>
       <div class="main">
         <main class="">
           <section class="hero-section">
@@ -115,12 +126,12 @@
                 </div>
               </div>
             </section>
-            <section class="hot-products py-md">
+            <section class="recent-products py-md">
               <h3 class="">
-                People recently <span class="imp-word">bought</span> these...
+                Browse various <span class="imp-word">collections</span>...
               </h3>
-              <div class="products grid gap-2 mob-grid-1 mx-auto">
-                <div class="card">
+              <div class="collections flex-wrap flex-row gap-1 mx-auto">
+                <!-- <div class="card">
                   <div class="pos-ab card-badge card-badge-left top-left-pos">
                     10% off
                   </div>
@@ -226,8 +237,16 @@
                       </div>
                     </div>
                   </div>
+                </div> -->
+                <div class="category flex-center flex-grow-1">
+                    <img class="w-100 blur" src="./assets/collection-1.png" alt="">
+                    <div class="pos-ab collection-cover-text px-sm txt-lg txt-bold">Clearance SALE</div>
                 </div>
-              </div>
+                <div class="category flex-center flex-grow-1">
+                    <img class="w-100 blur" src="./assets/collection-2.png" alt="">
+                    <div class="pos-ab collection-cover-text px-sm txt-lg txt-bold">2022 Season Apparel</div>
+                </div>
+            </div>
             </section>
           </section>
         </main>
@@ -238,7 +257,7 @@
         >
           <div class="footer-info">
             <div class="footer-social py-sm">Quick Links</div>
-            <ul class="footer-social-icons flex-col gap-2 py-sm">
+            <ul class="footer-social-icons grid grid-col-1 gap-1 py-sm">
               <li>
                 <a href="#">Home</a>
               </li>
