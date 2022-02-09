@@ -1,0 +1,63 @@
+@import url("./index.css");
+
+.input-checkbox {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-checkbox input[type="checkbox"] {
+    margin-left: var(--size-3);
+}
+
+.login-page {
+  min-height: 80vh;
+  position: relative;
+}
+
+.login-modal {
+  max-width: 30rem;
+  margin: auto;
+  position: relative;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.form-border {
+  border: 2px solid var(--primary-dark-color);
+  border-radius: var(--radius-extra-large);
+}
+
+.mb-1 {
+  margin-bottom: var(--size-9);
+}
+
+.login-title {
+  border-bottom: 2px solid var(--primary-dark-color);
+  padding: var(--size-5);
+}
+
+.hide {
+  display: none;
+}
+
+.color-prim {
+  color: var(--primary-dark-color);
+}
+
+.login-close-btn {
+  transform: translate(-100%, 100%);
+  cursor: pointer;
+}
+
+.btn-cta {
+  background-color: var(--badge-yellow);
+  padding: var(--size-7) var(--size-9);
+}
+
+@media screen and (max-width:480px) {
+    .forgot {
+        margin: var(--size-5) 0;
+    }
+}
