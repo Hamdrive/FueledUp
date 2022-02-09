@@ -128,6 +128,16 @@
     left: 15%;
 }
 
+/* Overiding CSS Library styles */
+.btn-md {
+    padding: var(--size-5) var(--size-9);
+}
+
+.badge-count {
+    min-width: var(--size-11);
+    height: var(--size-11);
+}
+
 @media screen and (min-width: 1024px) {
     .mob-search-input {
         display: none;
