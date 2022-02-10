@@ -1,6 +1,57 @@
 @import url("../styles.css");
 
-/* Overiding CSS Library styles */
+.pos-rel {
+  position: relative;
+}
+
+.mt-1 {
+  margin-top: var(--size-9);
+}
+
+.mt-2 {
+  margin-top: var(--size-13);
+}
+
+.mt-3 {
+  margin-top: var(--size-17);
+}
+
+.mt-5 {
+  margin-top: var(--size-22);
+}
+
+.pl-2 {
+  padding-left: var(--size-13);
+}
+
+.mx-2 {
+  margin: 0 var(--size-13);
+}
+
+.mr-sm {
+  margin-right: var(--size-5);
+}
+
+.mr-1 {
+  margin-right: var(--size-9);
+}
+
+.mr-2 {
+  margin-right: var(--size-13);
+}
+
+.mr-3 {
+  margin-right: var(--size-15);
+}
+
+.ovy-scroll {
+  overflow-y: scroll;
+}
+
+.border-r-2 {
+  border-right: 2px solid var(--secondary-color);
+}
+
 .btn-md {
   padding: var(--size-5) var(--size-9);
 }
@@ -28,9 +79,30 @@
 }
 
 .mb-1 {
-    margin-bottom: var(--size-9);
+  margin-bottom: var(--size-9);
+}
+
+.mb-sm {
+  margin-bottom: var(--size-5);
 }
 
 .mt-1 {
-    margin-top: var(--size-9);
+  margin-top: var(--size-9);
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-basis-25 {
+  flex-basis: 25%;
+}
+
+.grid-cols-auto {
+  grid-template-columns: repeat(auto-fit, 18rem);
+  grid-auto-flow: row;
 }
