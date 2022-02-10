@@ -26,3 +26,11 @@
 .w-100 {
   width: 100%;
 }
+
+.mb-1 {
+    margin-bottom: var(--size-9);
+}
+
+.mt-1 {
+    margin-top: var(--size-9);
+}
