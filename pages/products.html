@@ -84,183 +84,458 @@
         </div>
       </div>
       <div class="main">
-        <main class="pos-rel">
-          <aside class="min-vh-85 filters top-left-pos mt-5 pl-2 border-r-2">
-              <header class="pos-st flex-between mt-3 mb-1 px-md">
-                <h4 class="txt-black">Filters</h4>
-                <button class="btn btn-sm btn-sec px-md">Clear</button>
-              </header>
-              <section class="filter-section">
-
-                  <section class="mt-2 px-md">
-                    <h4 class="txt-black">Price</h4>
-                    <article>
-                        <input type="range" min="0" max="6" step="1" list="tickmarks" class="slider"/>
-                        <datalist id="tickmarks" class="flex-between txt-sm">
-                            <option value="1000" class="txt-semibold" label=">1K"></option>
-                            <option value="2500" class="hide"></option>
-                            <option value="5000"></option>
-                            <option value="10000" class="txt-semibold" label="10K"></option>
-                            <option value="20000"></option>
-                            <option value="50000" class="txt-semibold" label="50K"></option>
-                        </datalist>
-                    </article>
-                  </section>
-                  <section class="mt-2 px-md">
-                    <h4 class="txt-black">Category</h4>
-                    <article class="mx-1 py-sm">
-                      <input
-                        type="checkbox"
-                        class="checkbox mr-3"
-                        name="category"
-                        id="input"
-                      />
-                      <label for="input" class="txt-reg txt-semibold"
-                        >Bottles</label
-                      >
-                    </article>
-                    <article class="mx-1 py-sm">
-                      <input
-                        type="checkbox"
-                        class="checkbox mr-3"
-                        name="category"
-                        id="input"
-                      />
-                      <label for="input" class="txt-reg txt-semibold"
-                        >Masks</label
-                      >
-                    </article>
-                    <article class="mx-1 py-sm">
-                      <input
-                        type="checkbox"
-                        class="checkbox mr-3"
-                        name="category"
-                        id="input"
-                      />
-                      <label for="input" class="txt-reg txt-semibold"
-                        >Clothing</label
-                      >
-                    </article>
-                    <article class="mx-1 py-sm">
-                      <input
-                        type="checkbox"
-                        class="checkbox mr-3"
-                        name="category"
-                        id="input"
-                      />
-                      <label for="input" class="txt-reg txt-semibold"
-                        >Bags</label
-                      >
-                    </article>
-                    <article class="mx-1 py-sm">
-                      <input
-                        type="checkbox"
-                        class="checkbox mr-3"
-                        name="category"
-                        id="input"
-                      />
-                      <label for="input" class="txt-reg txt-semibold"
-                        >Eyewear</label
-                      >
-                    </article>
-                    <article class="mx-1 py-sm">
-                      <input
-                        type="checkbox"
-                        class="checkbox mr-3"
-                        name="category"
-                        id="input"
-                      />
-                      <label for="input" class="txt-reg txt-semibold"
-                        >Headwear</label
-                      >
-                    </article>
-                    <article class="mx-1 py-sm">
-                      <input
-                        type="checkbox"
-                        class="checkbox mr-3"
-                        name="category"
-                        id="input"
-                      />
-                      <label for="input" class="txt-reg txt-semibold"
-                        >Models</label
-                      >
-                    </article>
-                  </section>
-                  <section class="mt-2 px-md">
-                      <h4 class="txt-black">Ratings</h4>
-                      <article class="mx-1 py-sm">
-                          <input
-                            type="radio"
-                            class="radiobutton mr-3"
-                            name="review"
-                            id="review"
-                          />
-                          <label for="review" class="txt-reg txt-semibold"
-                            >4 Stars & above</label
-                          >
-                        </article>
-                      <article class="mx-1 py-sm">
-                          <input
-                            type="radio"
-                            class="radiobutton mr-3"
-                            name="review"
-                            id="review"
-                          />
-                          <label for="review" class="txt-reg txt-semibold"
-                            >3 Stars & above</label
-                          >
-                        </article>
-                    <article class="mx-1 py-sm">
-                        <input
-                          type="radio"
-                          class="radiobutton mr-3"
-                          name="review"
-                          id="review"
-                        />
-                        <label for="review" class="txt-reg txt-semibold"
-                          >2 Stars & above</label
-                        >
-                      </article>
-                    <article class="mx-1 py-sm">
-                        <input
-                          type="radio"
-                          class="radiobutton mr-3"
-                          name="review"
-                          id="review"
-                        />
-                        <label for="review" class="txt-reg txt-semibold"
-                          >1 Star & above</label
-                        >
-                      </article>
-                  </section>
-                  <section class="mt-2 px-md">
-                    <h4 class="txt-black">Sort by</h4>
-                    <article class="mx-1 py-sm">
-                        <input
-                          type="radio"
-                          class="radiobutton mr-3"
-                          name="review"
-                          id="review"
-                        />
-                        <label for="review" class="txt-reg txt-semibold"
-                          >High to Low</label
-                        >
-                      </article>
-                    <article class="mx-1 py-sm">
-                        <input
-                          type="radio"
-                          class="radiobutton mr-3"
-                          name="review"
-                          id="review"
-                        />
-                        <label for="review" class="txt-reg txt-semibold"
-                          >Low to High</label
-                        >
-                      </article>
-                  </section>
+        <main class="pos-rel my-3">
+          <aside
+            class="min-vh-85 filters top-left-pos mt-5 pl-2 border-r-2 mob-aside"
+          >
+            <header class="pos-st flex-between mt-3 mb-1 px-md mob-header">
+              <h4 class="txt-black">Filters</h4>
+              <button class="btn btn-sm btn-sec px-md">Clear</button>
+            </header>
+            <section class="filter-section mob-hide">
+              <section class="mt-2 px-md">
+                <h4 class="txt-black">Price</h4>
+                <article>
+                  <input
+                    type="range"
+                    min="0"
+                    max="6"
+                    step="1"
+                    list="tickmarks"
+                    class="slider"
+                  />
+                  <datalist id="tickmarks" class="flex-between txt-sm">
+                    <option
+                      value="1000"
+                      class="txt-semibold"
+                      label="&lt;1K"
+                    ></option>
+                    <option value="2500" class="hide"></option>
+                    <option value="5000"></option>
+                    <option
+                      value="10000"
+                      class="txt-semibold"
+                      label="10K"
+                    ></option>
+                    <option value="20000"></option>
+                    <option
+                      value="50000"
+                      class="txt-semibold"
+                      label="50K"
+                    ></option>
+                  </datalist>
+                </article>
               </section>
+              <section class="mt-2 px-md">
+                <h4 class="txt-black">Category</h4>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="checkbox"
+                    class="checkbox mr-3"
+                    name="category"
+                    id="input"
+                  />
+                  <label for="input" class="txt-reg txt-semibold"
+                    >Bottles</label
+                  >
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="checkbox"
+                    class="checkbox mr-3"
+                    name="category"
+                    id="input"
+                  />
+                  <label for="input" class="txt-reg txt-semibold">Masks</label>
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="checkbox"
+                    class="checkbox mr-3"
+                    name="category"
+                    id="input"
+                  />
+                  <label for="input" class="txt-reg txt-semibold"
+                    >Clothing</label
+                  >
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="checkbox"
+                    class="checkbox mr-3"
+                    name="category"
+                    id="input"
+                  />
+                  <label for="input" class="txt-reg txt-semibold">Bags</label>
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="checkbox"
+                    class="checkbox mr-3"
+                    name="category"
+                    id="input"
+                  />
+                  <label for="input" class="txt-reg txt-semibold"
+                    >Eyewear</label
+                  >
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="checkbox"
+                    class="checkbox mr-3"
+                    name="category"
+                    id="input"
+                  />
+                  <label for="input" class="txt-reg txt-semibold"
+                    >Headwear</label
+                  >
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="checkbox"
+                    class="checkbox mr-3"
+                    name="category"
+                    id="input"
+                  />
+                  <label for="input" class="txt-reg txt-semibold">Models</label>
+                </article>
+              </section>
+              <section class="mt-2 px-md">
+                <h4 class="txt-black">Ratings</h4>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="radio"
+                    class="radiobutton mr-3"
+                    name="review"
+                    id="review"
+                  />
+                  <label for="review" class="txt-reg txt-semibold"
+                    >4 Stars & above</label
+                  >
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="radio"
+                    class="radiobutton mr-3"
+                    name="review"
+                    id="review"
+                  />
+                  <label for="review" class="txt-reg txt-semibold"
+                    >3 Stars & above</label
+                  >
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="radio"
+                    class="radiobutton mr-3"
+                    name="review"
+                    id="review"
+                  />
+                  <label for="review" class="txt-reg txt-semibold"
+                    >2 Stars & above</label
+                  >
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="radio"
+                    class="radiobutton mr-3"
+                    name="review"
+                    id="review"
+                  />
+                  <label for="review" class="txt-reg txt-semibold"
+                    >1 Star & above</label
+                  >
+                </article>
+              </section>
+              <section class="mt-2 px-md">
+                <h4 class="txt-black">Sort by</h4>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="radio"
+                    class="radiobutton mr-3"
+                    name="review"
+                    id="review"
+                  />
+                  <label for="review" class="txt-reg txt-semibold"
+                    >High to Low</label
+                  >
+                </article>
+                <article class="mx-1 py-sm">
+                  <input
+                    type="radio"
+                    class="radiobutton mr-3"
+                    name="review"
+                    id="review"
+                  />
+                  <label for="review" class="txt-reg txt-semibold"
+                    >Low to High</label
+                  >
+                </article>
+              </section>
+            </section>
           </aside>
-          <section class="min-vh-85 product-cards"></section>
+          <section
+            class="min-vh-85 product-cards grid grid-cols-auto gap-2 px-md"
+          >
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                10% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img1.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-1">MV33 Brimmed Cap</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹3,099/-</p>
+                    <s class="strike-color txt-semibold">₹3,400/-</s>
+                  </div>
+                  <p class="flex-basis-25 txt-sm txt-bold ml-auto rating">
+                    <i class="fas fa-sm fa-star"></i> 4.9
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="card-brief">
+                Be part of the celebration with Max Verstappen, champion of the
+                world in 2021.
+              </div>
+              <hr />
+              <div class="card-footer flex-around">
+                <button
+                  class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                >
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                35% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img2.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-1">KR7 Sneakers Black</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹4,999/-</p>
+                    <s class="strike-color txt-semibold">₹7,700/-</s>
+                  </div>
+                  <p class="flex-basis-25 txt-sm txt-bold ml-auto rating">
+                    <i class="fas fa-sm fa-star"></i> 4.1
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="card-brief">
+                Worn by Kimi Räikkönen when he goes out to have his drincc.
+              </div>
+              <hr />
+              <div class="card-footer flex-around">
+                <button
+                  class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                >
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                6% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img3.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-sm">SV5 Helmet (1:1)</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹3,99,999/-</p>
+                    <s class="strike-color txt-semibold">₹4,26,299/-</s>
+                  </div>
+                  <p class="flex-basis-25 txt-sm txt-bold ml-auto rating">
+                    <i class="fas fa-sm fa-star"></i> 3.7
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="card-brief">
+                Worn by Sebastian Vettel at the 2021 Emilia Romagna Grand Prix.
+              </div>
+              <hr />
+              <div class="card-footer flex-around">
+                <button
+                  class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                >
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                10% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img1.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-1">MV33 Brimmed Cap</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹3,099/-</p>
+                    <s class="strike-color txt-semibold">₹3,400/-</s>
+                  </div>
+                  <p class="flex-basis-25 txt-sm txt-bold ml-auto rating">
+                    <i class="fas fa-sm fa-star"></i> 4.9
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="card-brief">
+                Be part of the celebration with Max Verstappen, champion of the
+                world in 2021.
+              </div>
+              <hr />
+              <div class="card-footer flex-around">
+                <button
+                  class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                >
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                35% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img2.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-1">KR7 Sneakers Black</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹4,999/-</p>
+                    <s class="strike-color txt-semibold">₹7,700/-</s>
+                  </div>
+                  <p class="flex-basis-25 txt-sm txt-bold ml-auto rating">
+                    <i class="fas fa-sm fa-star"></i> 4.1
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="card-brief">
+                Worn by Kimi Räikkönen when he goes out to have his drincc.
+              </div>
+              <hr />
+              <div class="card-footer flex-around">
+                <button
+                  class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                >
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                6% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img3.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-sm">SV5 Helmet (1:1)</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹3,99,999/-</p>
+                    <s class="strike-color txt-semibold">₹4,26,299/-</s>
+                  </div>
+                  <p class="flex-basis-25 txt-sm txt-bold ml-auto rating">
+                    <i class="fas fa-sm fa-star"></i> 3.7
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="card-brief">
+                Worn by Sebastian Vettel at the 2021 Emilia Romagna Grand Prix.
+              </div>
+              <hr />
+              <div class="card-footer flex-around">
+                <button
+                  class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                >
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                10% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img1.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-1">MV33 Brimmed Cap</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹3,099/-</p>
+                    <s class="strike-color txt-semibold">₹3,400/-</s>
+                  </div>
+                  <p class="flex-basis-25 txt-sm txt-bold ml-auto rating">
+                    <i class="fas fa-sm fa-star"></i> 4.9
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="card-brief">
+                Be part of the celebration with Max Verstappen, champion of the
+                world in 2021.
+              </div>
+              <hr />
+              <div class="card-footer flex-around">
+                <button
+                  class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                >
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                35% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img2.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-1">KR7 Sneakers Black</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹4,999/-</p>
+                    <s class="strike-color txt-semibold">₹7,700/-</s>
+                  </div>
+                  <p class="flex-basis-25 txt-sm txt-bold ml-auto rating">
+                    <i class="fas fa-sm fa-star"></i> 4.1
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="card-brief">
+                Worn by Kimi Räikkönen when he goes out to have his drincc.
+              </div>
+              <hr />
+              <div class="card-footer flex-around">
+                <button
+                  class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                >
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+          </section>
         </main>
       </div>
       <div class="py-md footer footer-doc">
