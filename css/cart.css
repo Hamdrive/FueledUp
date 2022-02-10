@@ -34,26 +34,6 @@
   border-radius: var(--radius-large);
 }
 
-.grid-cols-2-1 {
-  grid-template-columns: 2fr 1fr;
-}
-
-.w-60 {
-  width: 60%;
-}
-
-.max-width-1000 {
-  max-width: 1000px;
-}
-
-.gap-3 {
-  gap: 3rem;
-}
-
-.gap-4 {
-  gap: 10rem;
-}
-
 .card-info{
     width: 60%;
     display: flex;
