@@ -51,7 +51,7 @@
 .border-r-2 {
   border-right: 2px solid var(--secondary-color);
 }
-/* Overiding CSS Library styles */
+
 .btn-md {
   padding: var(--size-5) var(--size-9);
 }
@@ -100,4 +100,9 @@
 
 .flex-basis-25 {
   flex-basis: 25%;
+}
+
+.grid-cols-auto {
+  grid-template-columns: repeat(auto-fit, 18rem);
+  grid-auto-flow: row;
 }

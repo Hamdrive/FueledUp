@@ -57,11 +57,6 @@
   color: var(--btn-error-color);
 }
 
-.grid-cols-auto {
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 18rem));
-  grid-auto-flow: row;
-}
-
 .card-brief {
   padding: 0 var(--size-5);
 }
