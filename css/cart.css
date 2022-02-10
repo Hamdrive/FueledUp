@@ -1,0 +1,9 @@
+@import url("./index.css");
+
+.btn:hover {
+  transform: none;
+}
+
+.txt-md {
+    font-size: 1.3rem;
+}
