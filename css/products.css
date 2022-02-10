@@ -18,13 +18,13 @@
     margin-left: 18rem;
 }
 
-.checkbox {
+.checkbox, .radiobutton {
     width: fit-content;
     transform: scale(1.2);
 }
 
 .filter-section {
-    height: 80vh;
+    height: 70vh;
     overflow-y: scroll;
 }
 

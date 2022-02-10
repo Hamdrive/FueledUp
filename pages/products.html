@@ -85,90 +85,100 @@
       </div>
       <div class="main">
         <main class="pos-rel">
-          <aside class="min-vh-85 filters top-left-pos mt-5 pl-2">
-              <section class="mt-2 filter-section">
+          <aside class="min-vh-85 filters top-left-pos mt-5 pl-2 border-r-2">
+              <header class="pos-st flex-between mt-3 mb-1 px-md">
+                <h4 class="txt-black">Filters</h4>
+                <button class="btn btn-sm btn-sec px-md">Clear</button>
+              </header>
+              <section class="filter-section">
 
-                  <header class="flex-between mt-2 px-md">
-                    <h4 class="txt-black">Filters</h4>
-                    <button class="btn btn-sm btn-sec px-md">Clear</button>
-                  </header>
                   <section class="mt-2 px-md">
                     <h4 class="txt-black">Price</h4>
-                    <div></div>
+                    <article>
+                        <input type="range" min="0" max="6" step="1" list="tickmarks" class="slider"/>
+                        <datalist id="tickmarks" class="flex-between txt-sm">
+                            <option value="1000" class="txt-semibold" label=">1K"></option>
+                            <option value="2500" class="hide"></option>
+                            <option value="5000"></option>
+                            <option value="10000" class="txt-semibold" label="10K"></option>
+                            <option value="20000"></option>
+                            <option value="50000" class="txt-semibold" label="50K"></option>
+                        </datalist>
+                    </article>
                   </section>
                   <section class="mt-2 px-md">
                     <h4 class="txt-black">Category</h4>
-                    <article class="flex-between mx-2 py-sm">
+                    <article class="mx-1 py-sm">
                       <input
                         type="checkbox"
-                        class="checkbox"
-                        name="agree"
+                        class="checkbox mr-3"
+                        name="category"
                         id="input"
                       />
                       <label for="input" class="txt-reg txt-semibold"
                         >Bottles</label
                       >
                     </article>
-                    <article class="flex-between mx-2 py-sm">
+                    <article class="mx-1 py-sm">
                       <input
                         type="checkbox"
-                        class="checkbox"
-                        name="agree"
+                        class="checkbox mr-3"
+                        name="category"
                         id="input"
                       />
                       <label for="input" class="txt-reg txt-semibold"
                         >Masks</label
                       >
                     </article>
-                    <article class="flex-between mx-2 py-sm">
+                    <article class="mx-1 py-sm">
                       <input
                         type="checkbox"
-                        class="checkbox"
-                        name="agree"
+                        class="checkbox mr-3"
+                        name="category"
                         id="input"
                       />
                       <label for="input" class="txt-reg txt-semibold"
                         >Clothing</label
                       >
                     </article>
-                    <article class="flex-between mx-2 py-sm">
+                    <article class="mx-1 py-sm">
                       <input
                         type="checkbox"
-                        class="checkbox"
-                        name="agree"
+                        class="checkbox mr-3"
+                        name="category"
                         id="input"
                       />
                       <label for="input" class="txt-reg txt-semibold"
                         >Bags</label
                       >
                     </article>
-                    <article class="flex-between mx-2 py-sm">
+                    <article class="mx-1 py-sm">
                       <input
                         type="checkbox"
-                        class="checkbox"
-                        name="agree"
+                        class="checkbox mr-3"
+                        name="category"
                         id="input"
                       />
                       <label for="input" class="txt-reg txt-semibold"
                         >Eyewear</label
                       >
                     </article>
-                    <article class="flex-between mx-2 py-sm">
+                    <article class="mx-1 py-sm">
                       <input
                         type="checkbox"
-                        class="checkbox"
-                        name="agree"
+                        class="checkbox mr-3"
+                        name="category"
                         id="input"
                       />
                       <label for="input" class="txt-reg txt-semibold"
                         >Headwear</label
                       >
                     </article>
-                    <article class="flex-between mx-2 py-sm">
+                    <article class="mx-1 py-sm">
                       <input
                         type="checkbox"
-                        class="checkbox"
-                        name="agree"
+                        class="checkbox mr-3"
+                        name="category"
                         id="input"
                       />
                       <label for="input" class="txt-reg txt-semibold"
@@ -177,12 +187,76 @@
                     </article>
                   </section>
                   <section class="mt-2 px-md">
-                    <h4 class="txt-black">Ratings</h4>
-                    <div></div>
+                      <h4 class="txt-black">Ratings</h4>
+                      <article class="mx-1 py-sm">
+                          <input
+                            type="radio"
+                            class="radiobutton mr-3"
+                            name="review"
+                            id="review"
+                          />
+                          <label for="review" class="txt-reg txt-semibold"
+                            >4 Stars & above</label
+                          >
+                        </article>
+                      <article class="mx-1 py-sm">
+                          <input
+                            type="radio"
+                            class="radiobutton mr-3"
+                            name="review"
+                            id="review"
+                          />
+                          <label for="review" class="txt-reg txt-semibold"
+                            >3 Stars & above</label
+                          >
+                        </article>
+                    <article class="mx-1 py-sm">
+                        <input
+                          type="radio"
+                          class="radiobutton mr-3"
+                          name="review"
+                          id="review"
+                        />
+                        <label for="review" class="txt-reg txt-semibold"
+                          >2 Stars & above</label
+                        >
+                      </article>
+                    <article class="mx-1 py-sm">
+                        <input
+                          type="radio"
+                          class="radiobutton mr-3"
+                          name="review"
+                          id="review"
+                        />
+                        <label for="review" class="txt-reg txt-semibold"
+                          >1 Star & above</label
+                        >
+                      </article>
                   </section>
                   <section class="mt-2 px-md">
                     <h4 class="txt-black">Sort by</h4>
-                    <div></div>
+                    <article class="mx-1 py-sm">
+                        <input
+                          type="radio"
+                          class="radiobutton mr-3"
+                          name="review"
+                          id="review"
+                        />
+                        <label for="review" class="txt-reg txt-semibold"
+                          >High to Low</label
+                        >
+                      </article>
+                    <article class="mx-1 py-sm">
+                        <input
+                          type="radio"
+                          class="radiobutton mr-3"
+                          name="review"
+                          id="review"
+                        />
+                        <label for="review" class="txt-reg txt-semibold"
+                          >Low to High</label
+                        >
+                      </article>
                   </section>
               </section>
           </aside>
