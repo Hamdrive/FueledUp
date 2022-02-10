@@ -1,1 +1,36 @@
 @import url("../styles.css");
+
+/* Overiding CSS Library styles */
+.btn-md {
+  padding: var(--size-5) var(--size-9);
+}
+
+.badge-count {
+  min-width: var(--size-11);
+  height: var(--size-11);
+}
+
+.btn-cta {
+  background-color: var(--badge-yellow);
+}
+
+.hide-search {
+  display: none;
+}
+
+.form-border {
+  border: 2px solid var(--primary-dark-color);
+  border-radius: var(--radius-extra-large);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mb-1 {
+    margin-bottom: var(--size-9);
+}
+
+.mt-1 {
+    margin-top: var(--size-9);
+}
