@@ -57,12 +57,27 @@
 }
 
 .badge-count {
-  min-width: var(--size-11);
-  height: var(--size-11);
+    min-width: var(--size-11);
+    height: var(--size-11);
 }
 
 .btn-cta {
-  background-color: var(--badge-yellow);
+    background-color: var(--badge-yellow);
+    padding: var(--size-7) var(--size-9);
+}
+
+.btn-cta:hover {
+    background-color: rgba(245,158,11, 0.7);  
+}
+
+.btn-wish {
+    padding: var(--size-7) var(--size-9);
+    outline: 2px solid var(--primary-dark-color);
+    color: var(--primary-dark-color);
+}
+
+.btn-wish:hover {
+    background-color: var(--primary-extra-light-color);
 }
 
 .hide-search {
@@ -105,4 +120,8 @@
 .grid-cols-auto {
   grid-template-columns: repeat(auto-fit, 18rem);
   grid-auto-flow: row;
+}
+
+.txt-capitalize {
+    text-transform: capitalize;
 }
