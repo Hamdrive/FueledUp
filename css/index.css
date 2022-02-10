@@ -57,27 +57,27 @@
 }
 
 .badge-count {
-    min-width: var(--size-11);
-    height: var(--size-11);
+  min-width: var(--size-11);
+  height: var(--size-11);
 }
 
 .btn-cta {
-    background-color: var(--badge-yellow);
-    padding: var(--size-7) var(--size-9);
+  background-color: var(--badge-yellow);
+  padding: var(--size-7) var(--size-9);
 }
 
 .btn-cta:hover {
-    background-color: rgba(245,158,11, 0.7);  
+  background-color: rgba(245, 158, 11, 0.7);
 }
 
 .btn-wish {
-    padding: var(--size-7) var(--size-9);
-    outline: 2px solid var(--primary-dark-color);
-    color: var(--primary-dark-color);
+  padding: var(--size-7) var(--size-9);
+  outline: 2px solid var(--primary-dark-color);
+  color: var(--primary-dark-color);
 }
 
 .btn-wish:hover {
-    background-color: var(--primary-extra-light-color);
+  background-color: var(--primary-extra-light-color);
 }
 
 .hide-search {
@@ -123,5 +123,15 @@
 }
 
 .txt-capitalize {
-    text-transform: capitalize;
+  text-transform: capitalize;
+}
+
+.rating {
+  background-color: var(--primary-extra-light-color);
+  padding: var(--size-3) var(--size-5);
+  border-radius: var(--radius-large);
+}
+
+.strike-color {
+  color: var(--btn-error-color);
 }
