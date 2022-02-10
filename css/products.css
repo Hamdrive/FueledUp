@@ -1,1 +1,30 @@
 @import url("./index.css");
+
+.filters {
+  position: fixed;
+  width: 18rem;
+  height: 100vh;
+}
+
+.btn:hover {
+  transform: none;
+}
+
+.btn-sec {
+  outline: 2px solid var(--secondary-color);
+}
+
+.product-cards, .footer {
+    margin-left: 18rem;
+}
+
+.checkbox {
+    width: fit-content;
+    transform: scale(1.2);
+}
+
+.filter-section {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
