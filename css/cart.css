@@ -5,5 +5,113 @@
 }
 
 .txt-md {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
+}
+
+.card {
+  width: 100%;
+  flex-direction: row;
+  height: 22rem;
+}
+
+.card-img {
+  width: 40%;
+  height: 100%;
+}
+
+.card-brief {
+  height: var(--size-21);
+}
+
+.quantity-trigger {
+  width: 30px;
+  height: 100%;
+}
+
+.quantity-input {
+  width: 40px;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--radius-large);
+}
+
+.grid-cols-2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.max-width-1000 {
+  max-width: 1000px;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 10rem;
+}
+
+.card-info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.card-btns{
+    margin-top: var(--size-9);
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-cols-2-1 {
+    grid-template-columns: none;
+  }
+
+  .grid-reverse {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-brief {
+    display: none;
+  }
+
+  .btn-cta,
+  .btn-wish {
+    font-size: var(--size-8);
+  }
+
+  .card {
+    max-height: 18rem;
+  }
+
+  .card-info {
+      width: 70%;
+  }
+
+  .card-img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-btns, .quantity {
+    padding: var(--size-5);
+  }
+
+  .card-btns {
+      margin-top: 0;
+  }
+
+  .card-title p {
+    margin-top: 0;
+    font-size: var(--size-10);
+  }
+
+  
 }
