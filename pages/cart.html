@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FueledUp | Products</title>
+
+    <!-- PowertrainUI library -->
+    <link
+      rel="stylesheet"
+      href="https://powertrain-ui.netlify.app/styles.css"
+    />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header pos-st top-left-pos py-md">
+        <header class="max-width-1200 nav-main flex-row px-md mx-auto">
+          <div class="nav-logo">
+            <a href="../../index.html">FueledUp</a>
+          </div>
+          <div class="search-input">
+            <div class="fas fa-search search-icon"></div>
+            <label for="searchbar"></label>
+            <input
+              class="input-round input-md border-2"
+              type="search"
+              name="searchbar"
+              id="searchbar"
+              placeholder="Search products..."
+            />
+          </div>
+          <button class="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav class="nav-list">
+            <button class="nav-list-close-btn">
+              <i class="fas fa-2x fa-times"></i>
+            </button>
+            <ul class="nav-menu h-100">
+              <li class="nav-item">
+                <a href="../../index.html" class=""
+                  ><button class="btn btn-md btn-outline px-md">
+                    Login
+                  </button></a
+                >
+              </li>
+              <li class="nav-item">
+                <div class="badge">
+                  <div class="fas fa-heart badge-icon txt-md px-sm"></div>
+                  <div class="badge-count top-right flex-center badge-yellow">
+                    0
+                  </div>
+                  <a href="#" class="ecom-heart-icon"></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="badge">
+                  <div
+                    class="fas fa-shopping-cart badge-icon txt-md px-sm"
+                  ></div>
+                  <div class="badge-count top-right flex-center badge-yellow">
+                    0
+                  </div>
+                  <a href="#" class="ecom-basket-icon"></a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="mob-search-input hide">
+          <div class="fas fa-search mob-search-icon"></div>
+          <label for="searchbar"></label>
+          <input
+            class="input-round input-md border-2"
+            type="search"
+            name="searchbar"
+            id="searchbar"
+            placeholder="Search products..."
+          />
+        </div>
+      </div>
+      <div class="main my-3">
+        <main
+          class="max-width-1000 grid grid-cols-2-1 grid-cols-1 grid-reverse gap-3 pos-rel px-lg mx-auto"
+        >
+          <section class="grid grid-col-1 gap-3">
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                6% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img3.png" alt="vertical card" />
+              </div>
+              <div class="card-info">
+                <div class="card-title flex-col">
+                  <p class="h3 txt-semibold mb-sm">SV5 Helmet (1:1)</p>
+                  <div class="flex-row align-center">
+                    <div class="dis-flex flex-wrap align-center">
+                      <p class="txt-lg txt-bold mr-sm">₹9,399/-</p>
+                      <s class="strike-color txt-semibold">₹9,999/-</s>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+                <div class="card-brief">
+                  Worn by Sebastian Vettel at the 2021 Emilia Romagna Grand
+                  Prix.
+                </div>
+                <div class="flex-row px-md my-sm quantity">
+                  <p>Quantity</p>
+                  <div class="flex-row px-lg">
+                    <div class="quantity-trigger flex-center">
+                      <i class="fas fa-sm fa-minus"></i>
+                    </div>
+                    <input
+                      class="txt-reg txt-bold txt-center quantity-input"
+                      type="number"
+                      name="quantity"
+                      id="quantity"
+                      value="1"
+                    />
+                    <div class="quantity-trigger flex-center">
+                      <i class="fas fa-sm fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-lg card-btns">
+                  <button
+                    class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                  >
+                    remove from cart
+                  </button>
+                  <button
+                    class="btn btn-wish btn-md txt-bold txt-reg w-100 my-1"
+                  >
+                    move to wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="pos-ab card-badge card-badge-left top-left-pos">
+                10% off
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img1.png" alt="vertical card" />
+              </div>
+              <div class="card-info">
+                <div class="card-title flex-col">
+                  <p class="h3 txt-semibold mb-sm">MV33 Brimmed Cap</p>
+                  <div class="flex-row align-center">
+                    <div class="dis-flex flex-wrap align-center">
+                      <p class="txt-lg txt-bold mr-sm">₹3,099/-</p>
+                      <s class="strike-color txt-semibold">₹3,400/-</s>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+                <div class="card-brief">
+                  Be part of the celebration with Max Verstappen, champion of
+                  the world.
+                </div>
+                <div class="flex-row px-md my-sm quantity">
+                  <p>Quantity</p>
+                  <div class="flex-row px-lg">
+                    <div class="quantity-trigger flex-center">
+                      <i class="fas fa-sm fa-minus"></i>
+                    </div>
+                    <input
+                      class="txt-reg txt-bold txt-center quantity-input"
+                      type="number"
+                      name="quantity"
+                      id="quantity"
+                      value="1"
+                    />
+                    <div class="quantity-trigger flex-center">
+                      <i class="fas fa-sm fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-lg card-btns">
+                  <button
+                    class="btn btn-atc btn-cta btn-md txt-bold txt-reg w-100"
+                  >
+                    Remove from cart
+                  </button>
+                  <button
+                    class="btn btn-wish btn-md txt-bold txt-reg w-100 my-1"
+                  >
+                    move to wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="grid-reverse">
+            <h2 class="txt-capitalize">Price details</h2>
+            <hr />
+            <div class="price-breakup">
+              <div class="flex-between my-1">
+                <p class="">Price (2 items)</p>
+                <p class="txt-semibold">₹9,999/-</p>
+              </div>
+              <div class="flex-between my-1">
+                <p class="">Discount</p>
+                <p class="txt-semibold">₹999/-</p>
+              </div>
+              <div class="flex-between my-1">
+                <p class="txt-capitalize">Delivery charges</p>
+                <p class="txt-semibold">₹99/-</p>
+              </div>
+            </div>
+            <hr />
+            <div class="price-total flex-between my-1">
+              <p class="txt-capitalize txt-bold txt-md">Total amount</p>
+              <p class="txt-md txt-bold">₹10,998/-</p>
+            </div>
+            <hr />
+            <div class="total-message my-2">
+              <p class="txt-md txt-center">
+                You will save <strong>₹999</strong> on this order!
+              </p>
+            </div>
+            <button
+              class="btn btn-order btn-cta btn-md txt-bold txt-reg w-100 my-1"
+            >
+              <i class="fas fa-truck"></i>Place Order
+            </button>
+          </section>
+        </main>
+      </div>
+      <div class="py-md footer footer-doc">
+        <footer
+          class="max-width-1200 grid grid-cols-2 gap-2 grid-ver-center mx-auto px-lg"
+        >
+          <div class="footer-info">
+            <div class="footer-social py-sm">Quick Links</div>
+            <ul class="footer-social-icons grid grid-col-1 gap-1 py-sm">
+              <li>
+                <a href="../index.html">Home</a>
+              </li>
+              <li>
+                <a href="./products.html">Products</a>
+              </li>
+              <li>
+                <a href="#">My Cart</a>
+              </li>
+              <li>
+                <a href="#">My Wishlist</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-brief">
+            <div class="footer-social py-sm">Socials</div>
+            <ul class="footer-social-icons dis-flex gap-2 py-sm">
+              <li>
+                <a href="https://github.com/Hamdrive"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/itsHamhere"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/hamza-husein/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://peerlist.io/hamza"
+                  ><i class="fas fa-parking"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="py-sm">
+              Designed with 💚 by <strong>Hamza Husein</strong>
+            </div>
+            <div class="py-sm">© FueledUp, 2022 All rights reserved.</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

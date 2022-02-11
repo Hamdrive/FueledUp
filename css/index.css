@@ -73,6 +73,21 @@
 
 .btn-cta {
   background-color: var(--badge-yellow);
+  padding: var(--size-7) var(--size-9);
+}
+
+.btn-cta:hover {
+  background-color: rgba(245, 158, 11, 0.7);
+}
+
+.btn-wish {
+  padding: var(--size-7) var(--size-9);
+  outline: 2px solid var(--primary-dark-color);
+  color: var(--primary-dark-color);
+}
+
+.btn-wish:hover {
+  background-color: var(--primary-extra-light-color);
 }
 
 .hide-search {
@@ -115,4 +130,38 @@
 .grid-cols-auto {
   grid-template-columns: repeat(auto-fit, 18rem);
   grid-auto-flow: row;
+}
+
+.txt-capitalize {
+  text-transform: capitalize;
+}
+
+.rating {
+  background-color: var(--primary-extra-light-color);
+  padding: var(--size-3) var(--size-5);
+  border-radius: var(--radius-large);
+}
+
+.strike-color {
+  color: var(--btn-error-color);
+}
+
+.grid-cols-2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.max-width-1000 {
+  max-width: 1000px;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 10rem;
 }
