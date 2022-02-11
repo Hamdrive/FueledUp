@@ -1,5 +1,15 @@
 @import url("../styles.css");
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto
+}
+
 .pos-rel {
   position: relative;
 }
