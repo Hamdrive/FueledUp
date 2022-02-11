@@ -42,6 +42,7 @@
   footer .grid-cols-2 {
     grid-template-columns: 0;
   }
+
   .grid-cols-auto {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
@@ -71,9 +72,8 @@
 }
 
 @media screen and (max-width: 360px) {
-    .page-content {
-        padding-left: var(--size-9);
-        padding-right: var(--size-9);
-      }
+  .page-content {
+    padding-left: var(--size-9);
+    padding-right: var(--size-9);
+  }
 }
-
