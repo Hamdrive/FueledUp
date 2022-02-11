@@ -1,1 +1,35 @@
 @import url("./index.css");
+
+.card {
+    width: 18rem;
+    max-height: 25rem;
+    height: inherit;
+}
+
+.card-footer {
+    justify-content: center;
+    align-items: center;
+    padding: var(--size-3) var(--size-7);
+}
+
+.btn:hover {
+    transform: none;
+  }
+
+.page-title {
+    display: flex;
+    justify-content: center;
+}
+
+.page-content {
+    padding-top: var(--size-9);
+    padding-bottom: var(--size-9);
+}
+
+@media screen and (min-width: 1024px) {
+    .page-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}
