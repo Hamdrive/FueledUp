@@ -61,26 +61,51 @@
   padding: 0 var(--size-5);
 }
 
+.wish-heart-btn {
+  width: var(--size-15);
+  height: var(--size-15);
+}
+
+.wish-heart-btn i {
+  font-size: var(--size-11);
+}
+
+.wish-heart-btn:hover {
+  background-color: var(--primary-extra-light-color);
+}
+
+.wish-heart-btn:hover i {
+  color: var(--badge-red);
+  fill: var(--badge-red);
+}
+.border-circle {
+  border-radius: 50%;
+}
+
+.top-right-pos {
+  transform: translate(-25%, 25%);
+}
+
 @media screen and (min-width: 1024px) {
-    .page-content {
-      padding-left: 0;
-      padding-right: 0;
-    }
+  .page-content {
+    padding-left: 0;
+    padding-right: 0;
   }
-  
-  @media screen and (min-width: 769px) {
-    .grid-col-1 {
-      grid-template-columns: 0;
-    }
-  
-    footer .grid-cols-2 {
-      grid-template-columns: 0;
-    }
-  
-    .grid-cols-auto {
-      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    }
+}
+
+@media screen and (min-width: 769px) {
+  .grid-col-1 {
+    grid-template-columns: 0;
   }
+
+  footer .grid-cols-2 {
+    grid-template-columns: 0;
+  }
+
+  .grid-cols-auto {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+}
 
 @media screen and (max-width: 768px) {
   .mob-hide {
