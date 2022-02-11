@@ -4,12 +4,13 @@
     width: 18rem;
     max-height: 25rem;
     height: inherit;
+    justify-content: space-between;
 }
 
-.card-footer {
+.card-btns {
     justify-content: center;
     align-items: center;
-    padding: var(--size-3) var(--size-7);
+    padding: var(--size-7);
 }
 
 .btn:hover {
