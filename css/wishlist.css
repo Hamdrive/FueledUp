@@ -1,36 +1,79 @@
 @import url("./index.css");
 
 .card {
-    width: 18rem;
-    max-height: 25rem;
-    height: inherit;
-    justify-content: space-between;
+  width: 18rem;
+  max-height: 25rem;
+  height: inherit;
+  justify-content: space-between;
 }
 
 .card-btns {
-    justify-content: center;
-    align-items: center;
-    padding: var(--size-7);
+  justify-content: center;
+  align-items: center;
+  padding: var(--size-7);
 }
 
 .btn:hover {
-    transform: none;
-  }
+  transform: none;
+}
 
 .page-title {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .page-content {
-    padding-top: var(--size-9);
-    padding-bottom: var(--size-9);
+  padding-top: var(--size-9);
+  padding-bottom: var(--size-9);
 }
 
 @media screen and (min-width: 1024px) {
-    .page-content {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
+  .page-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
+
+@media screen and (min-width: 769px) {
+  .grid-col-1 {
+    grid-template-columns: 0;
+  }
+
+  footer .grid-cols-2 {
+    grid-template-columns: 0;
+  }
+  .grid-cols-auto {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-cols-auto {
+    grid-template-columns: 0;
+  }
+
+  .grid-col-1 {
+    grid-template-columns: 0;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(min-content, auto));
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .grid-cols-auto {
+    grid-template-columns: 0;
+  }
+  .grid-col-1 {
+    grid-template-columns: minmax(min-content, auto);
+  }
+}
+
+@media screen and (max-width: 360px) {
+    .page-content {
+        padding-left: var(--size-9);
+        padding-right: var(--size-9);
+      }
+}
+
