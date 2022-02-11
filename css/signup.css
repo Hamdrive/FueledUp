@@ -20,7 +20,4 @@
   color: var(--primary-dark-color);
 }
 
-.sign-up-close-btn {
-  transform: translate(-100%, 100%);
-  cursor: pointer;
-}
+

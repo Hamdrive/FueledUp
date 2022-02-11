@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FueledUp | Products</title>
+
+    <!-- PowertrainUI library -->
+    <link
+      rel="stylesheet"
+      href="https://powertrain-ui.netlify.app/styles.css"
+    />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../css/wishlist.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header pos-st top-left-pos py-md">
+        <header class="max-width-1200 nav-main flex-row px-md mx-auto">
+          <div class="nav-logo">
+            <a href="../../index.html">FueledUp</a>
+          </div>
+          <div class="search-input">
+            <div class="fas fa-search search-icon"></div>
+            <label for="searchbar"></label>
+            <input
+              class="input-round input-md border-2"
+              type="search"
+              name="searchbar"
+              id="searchbar"
+              placeholder="Search products..."
+            />
+          </div>
+          <button class="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav class="nav-list">
+            <button class="nav-list-close-btn">
+              <i class="fas fa-2x fa-times"></i>
+            </button>
+            <ul class="nav-menu h-100">
+              <li class="nav-item">
+                <a href="../../index.html"
+                  ><button class="btn btn-md btn-outline px-md">
+                    Logout
+                  </button></a
+                >
+              </li>
+              <li class="nav-item">
+                <div class="badge">
+                  <div class="fas fa-heart badge-icon txt-md px-sm"></div>
+                  <div class="badge-count top-right flex-center badge-yellow">
+                    6
+                  </div>
+                  <a href="#" class="ecom-heart-icon"></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="badge">
+                  <div
+                    class="fas fa-shopping-cart badge-icon txt-md px-sm"
+                  ></div>
+                  <div class="badge-count top-right flex-center badge-yellow">
+                    2
+                  </div>
+                  <a href="#" class="ecom-basket-icon"></a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="mob-search-input hide">
+          <div class="fas fa-search mob-search-icon"></div>
+          <label for="searchbar"></label>
+          <input
+            class="input-round input-md border-2"
+            type="search"
+            name="searchbar"
+            id="searchbar"
+            placeholder="Search products..."
+          />
+        </div>
+      </div>
+      <div class="main my-2">
+        <main class="max-width-1200 mx-auto">
+          <h2 class="page-title txt-bold mx-auto py-md">My Wishlist</h2>
+          <hr />
+          <section
+            class="page-content grid grid-cols-auto grid-col-1 grid-cols-2 gap-1 mx-auto px-lg"
+          >
+            <div class="card mx-auto">
+              <div class="remove-card-btn pos-ab top-right-pos">
+                <i
+                class="far fa-2x fa-times-circle"
+              ></i>
+              </div>
+              <div class="card-img">
+                <img src="../assets/card-img1.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-sm">MV33 Brimmed Cap</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹3,099/-</p>
+                    <s class="strike-color txt-semibold">₹3,400/-</s>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-btns">
+                <button class="btn btn-wish btn-md txt-bold txt-reg w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  move to cart
+                </button>
+              </div>
+            </div>
+            <div class="card mx-auto">
+                <div class="remove-card-btn pos-ab top-right-pos">
+                    <i
+                    class="far fa-2x fa-times-circle"
+                  ></i>
+                </div>
+              <div class="card-img">
+                <img src="../assets/card-img2.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-sm">KR7 Sneakers Black</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹4,999/-</p>
+                    <s class="strike-color txt-semibold">₹7,700/-</s>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-btns">
+                <button class="btn btn-wish btn-md txt-bold txt-reg w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  move to cart
+                </button>
+              </div>
+            </div>
+            <div class="card mx-auto">
+                <div class="remove-card-btn pos-ab top-right-pos">
+                    <i
+                    class="far fa-2x fa-times-circle"
+                  ></i>
+                </div>
+              <div class="card-img">
+                <img src="../assets/card-img3.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold mb-sm">SV5 Helmet (1:1)</p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹9,399/-</p>
+                    <s class="strike-color txt-semibold">₹9,999/-</s>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-btns">
+                <button class="btn btn-wish btn-md txt-bold txt-reg w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  move to cart
+                </button>
+              </div>
+            </div>
+            <div class="card mx-auto">
+                <div class="remove-card-btn pos-ab top-right-pos">
+                    <i
+                    class="far fa-2x fa-times-circle"
+                  ></i>
+                </div>
+              <div class="card-img">
+                <img src="../assets/category-1.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold txt-capitalize mb-sm">
+                  SF21 model car (1:12)
+                </p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹3,099/-</p>
+                    <s class="strike-color txt-semibold">₹3,400/-</s>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-btns">
+                <button class="btn btn-wish btn-md txt-bold txt-reg w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  move to cart
+                </button>
+              </div>
+            </div>
+            <div class="card mx-auto">
+                <div class="remove-card-btn pos-ab top-right-pos">
+                    <i
+                    class="far fa-2x fa-times-circle"
+                  ></i>
+                </div>
+              <div class="card-img">
+                <img src="../assets/category-1.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold txt-capitalize mb-sm">
+                  SF21 model car (1:12)
+                </p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹3,099/-</p>
+                    <s class="strike-color txt-semibold">₹3,400/-</s>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-btns">
+                <button class="btn btn-wish btn-md txt-bold txt-reg w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  move to cart
+                </button>
+              </div>
+            </div>
+            <div class="card mx-auto">
+                <div class="remove-card-btn pos-ab top-right-pos">
+                    <i
+                    class="far fa-2x fa-times-circle"
+                  ></i>
+                </div>
+              <div class="card-img">
+                <img src="../assets/category-1.png" alt="vertical card" />
+              </div>
+              <div class="card-title flex-col">
+                <p class="txt-md txt-bold txt-capitalize mb-sm">
+                  SF21 model car (1:12)
+                </p>
+                <div class="flex-row align-center">
+                  <div class="dis-flex flex-wrap align-center">
+                    <p class="txt-md txt-bold mr-sm">₹3,099/-</p>
+                    <s class="strike-color txt-semibold">₹3,400/-</s>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="card-btns">
+                <button class="btn btn-wish btn-md txt-bold txt-reg w-100">
+                  <i class="fas fa-shopping-cart"></i>
+                  move to cart
+                </button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="py-md footer footer-doc">
+        <footer
+          class="max-width-1200 grid grid-cols-2 gap-2 grid-ver-center mx-auto px-lg"
+        >
+          <div class="footer-info">
+            <div class="footer-social py-sm">Quick Links</div>
+            <ul class="footer-social-icons grid grid-col-1 gap-1 py-sm">
+              <li>
+                <a href="../index.html">Home</a>
+              </li>
+              <li>
+                <a href="./products.html">Products</a>
+              </li>
+              <li>
+                <a href="./cart.html">My&nbsp;Cart</a>
+              </li>
+              <li>
+                <a href="#">My&nbsp;Wishlist</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-brief">
+            <div class="footer-social py-sm">Socials</div>
+            <ul class="footer-social-icons dis-flex gap-2 py-sm">
+              <li>
+                <a href="https://github.com/Hamdrive"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/itsHamhere"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/hamza-husein/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://peerlist.io/hamza"
+                  ><i class="fas fa-parking"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="py-sm">
+              Designed with 💚 by <strong>Hamza Husein</strong>
+            </div>
+            <div class="py-sm">© FueledUp, 2022 All rights reserved.</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
