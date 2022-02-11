@@ -171,7 +171,7 @@
     cursor: pointer;
 }
 
-.remove-card-btn {
+.remove-card-btn, .wish-heart-btn {
     transform: translate(-50%, 50%);
     cursor: pointer;
     z-index: 2;
