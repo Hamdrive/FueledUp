@@ -24,12 +24,12 @@
 }
 
 .quantity-trigger {
-  width: 30px;
+  width: var(--size-13);
   height: 100%;
 }
 
 .quantity-input {
-  width: 30px;
+  width: var(--size-13);
   border: 1px solid var(--secondary-color);
   border-radius: var(--radius-large);
 }
