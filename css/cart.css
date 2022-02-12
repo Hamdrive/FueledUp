@@ -55,12 +55,13 @@
   transform: none;
 }
 
-.txt-md {
-  font-size: 1.3rem;
-}
-
 .card-btns {
   margin-top: var(--size-9);
+}
+
+/* Price total style */
+.price-total .txt-md, .total-message .txt-md {
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 1024px) {
