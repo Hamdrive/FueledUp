@@ -71,6 +71,10 @@
   height: var(--size-11);
 }
 
+.btn:hover {
+  transform: none;
+}
+
 .btn-cta {
   background-color: var(--badge-yellow);
   padding: var(--size-7) var(--size-9);
@@ -177,6 +181,17 @@
   transform: translate(-50%, 50%);
   cursor: pointer;
   z-index: 2;
+}
+
+.txt-wrap {
+  white-space: normal;
+}
+
+@media screen and (max-width: 480px) {
+  .btn-product {
+    width: 90%;
+    
+  }
 }
 
 @media screen and (max-width: 350px) {
