@@ -144,11 +144,6 @@
     margin: 0 var(--size-5);
 }
 
-.btn-login {
-    background-color: var(--badge-yellow);
-    padding: var(--size-5) var(--size-9);
-}
-
 .top-right-icon {
     top: 0;
     right: 0;

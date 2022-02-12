@@ -75,9 +75,15 @@
   transform: none;
 }
 
+
 .btn-cta {
   background-color: var(--badge-yellow);
   padding: var(--size-7) var(--size-9);
+}
+
+.btn-login {
+  background-color: var(--badge-yellow);
+  padding: var(--size-5) var(--size-9);
 }
 
 .btn-cta:hover {
