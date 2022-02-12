@@ -1,23 +1,24 @@
 @import url("./index.css");
 
+/* Product page & footer layout styles */
+.product-cards,
+.footer {
+  margin-left: 18rem;
+  width: calc(100% - 18rem);
+}
+
+
+/* Filter sidebar styles */
 .filters {
   position: fixed;
   width: 18rem;
   height: 100vh;
 }
 
-.btn:hover {
-  transform: none;
-}
-
-.btn-sec {
-  outline: 2px solid var(--secondary-color);
-}
-
-.product-cards,
-.footer {
-  margin-left: 18rem;
-  width: calc(100% - 18rem);
+.rating {
+  background-color: var(--primary-extra-light-color);
+  padding: var(--size-3) var(--size-5);
+  border-radius: var(--radius-large);
 }
 
 .checkbox,
@@ -31,8 +32,11 @@
   overflow-y: scroll;
 }
 
+
+/* Product card styles */
 .card {
   width: 18rem;
+  height: 25rem;
 }
 
 .card-img {
@@ -41,20 +45,6 @@
 
 .card-img img {
   object-fit: scale-down;
-}
-
-.card {
-  height: 25rem;
-}
-
-.rating {
-  background-color: var(--primary-extra-light-color);
-  padding: var(--size-3) var(--size-5);
-  border-radius: var(--radius-large);
-}
-
-.strike-color {
-  color: var(--btn-error-color);
 }
 
 .card-brief {
@@ -78,14 +68,18 @@
   color: var(--badge-red);
   fill: var(--badge-red);
 }
+
 .border-circle {
   border-radius: 50%;
 }
 
+/* Override utility class for position in product */
 .top-right-pos {
   transform: translate(-25%, 25%);
 }
 
+
+/* Media queries to handle grid responsiveness on large screens */
 @media screen and (min-width: 769px) {
   .grid-col-1 {
     grid-template-columns: 0;
@@ -100,6 +94,8 @@
   }
 }
 
+
+/* Media queries to handle upto large screens */
 @media screen and (max-width: 768px) {
   .mob-hide {
     display: none;
@@ -132,6 +128,7 @@
     padding-left: 0;
     margin-top: 0;
   }
+
   .my-3 {
     margin: 0;
   }
@@ -149,6 +146,8 @@
   }
 }
 
+
+/* Media queries to handle upto large screens */
 @media screen and (max-width: 650px) {
   .grid-cols-auto {
     grid-template-columns: 0;
@@ -158,6 +157,8 @@
   }
 }
 
+
+/* Media queries to handle upto small screen */
 @media screen and (max-width: 360px) {
   .page-content {
     padding-left: var(--size-9);

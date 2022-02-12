@@ -49,12 +49,6 @@
   border-radius: var(--radius-large);
 }
 
-
-/* Card button styles */
-.btn:hover {
-  transform: none;
-}
-
 .card-btns {
   margin-top: var(--size-9);
 }
