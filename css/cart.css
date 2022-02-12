@@ -29,21 +29,21 @@
 }
 
 .quantity-input {
-  width: 40px;
+  width: 30px;
   border: 1px solid var(--secondary-color);
   border-radius: var(--radius-large);
 }
 
-.card-info{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+.card-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
-.card-btns{
-    margin-top: var(--size-9);
+.card-btns {
+  margin-top: var(--size-9);
 }
 
 @media screen and (max-width: 1024px) {
@@ -71,7 +71,7 @@
   }
 
   .card-info {
-      width: 70%;
+    width: 70%;
   }
 
   .card-img {
@@ -80,12 +80,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .card-btns, .quantity {
+  .card-btns,
+  .quantity {
     padding: var(--size-5);
   }
 
   .card-btns {
-      margin-top: 0;
+    margin-top: 0;
   }
 
   .card-title p {
@@ -93,5 +94,24 @@
     font-size: var(--size-10);
   }
 
-  
+  .quantity .px-lg {
+    padding: 0 var(--size-7);
+  }
+
+  .quantity p {
+    font-size: var(--size-9);
+  }
+
+  .card-btns .btn {
+      white-space: normal;
+  }
+
+  .card-btns .btn-md {
+    padding: var(--size-5) var(--size-9)
+
+  }
+
+  .card-btns .my-1 {
+      margin: var(--size-5) 0;
+  }
 }
