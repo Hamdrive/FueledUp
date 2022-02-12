@@ -17,7 +17,6 @@
   padding: var(--size-5);
 }
 
-
 /* Checkbox in login styles */
 .input-checkbox {
   flex-direction: row;
@@ -27,7 +26,6 @@
 .input-checkbox input[type="checkbox"] {
   margin-left: var(--size-3);
 }
-
 
 /* Media query for login page on medium mobiles and up */
 @media screen and (max-width: 480px) {

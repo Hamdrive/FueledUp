@@ -8,14 +8,12 @@
   justify-content: space-between;
 }
 
-
 /* Card button styles */
 .card-btns {
   justify-content: center;
   align-items: center;
   padding: var(--size-7);
 }
-
 
 @media screen and (min-width: 1025px) {
   /* Padding for small screens not required */
@@ -24,7 +22,6 @@
     padding-right: 0;
   }
 }
-
 
 @media screen and (min-width: 769px) {
   /* Disable other grid cols */
@@ -43,7 +40,6 @@
   }
 }
 
-
 @media screen and (max-width: 768px) {
   /* Disable other grid cols */
   .grid-cols-auto {
@@ -60,7 +56,6 @@
   }
 }
 
-
 @media screen and (max-width: 650px) {
   /* Disable other grid cols */
   .grid-cols-auto {
@@ -72,7 +67,6 @@
     grid-template-columns: minmax(min-content, auto);
   }
 }
-
 
 @media screen and (max-width: 360px) {
   /* Ensure visibility on smallest screen */

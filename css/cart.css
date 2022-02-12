@@ -24,7 +24,6 @@
   height: var(--size-21);
 }
 
-
 /* Quantity trigger in card */
 .quantity-trigger {
   width: var(--size-13);
@@ -41,9 +40,9 @@
   margin-top: var(--size-9);
 }
 
-
 /* Price total style */
-.price-total .txt-md, .total-message .txt-md {
+.price-total .txt-md,
+.total-message .txt-md {
   font-size: 1.3rem;
 }
 
@@ -113,16 +112,15 @@
   }
 
   .card-btns .btn {
-      white-space: normal;
+    white-space: normal;
   }
 
   .card-btns .btn-md {
-    padding: var(--size-5) var(--size-9)
-
+    padding: var(--size-5) var(--size-9);
   }
 
   .card-btns .my-1 {
-      margin: var(--size-5) 0;
+    margin: var(--size-5) 0;
   }
 }
 
