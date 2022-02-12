@@ -254,6 +254,10 @@
   white-space: normal;
 }
 
+/* Alternate auth text Login/Signup */
+.alt-auth-txt {
+  color: var(--primary-dark-color);
+}
 
 /* Media queries for tablets and up */
 @media screen and (max-width: 768px) {
