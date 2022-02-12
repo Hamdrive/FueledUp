@@ -86,13 +86,6 @@
   transform: translate(-25%, 25%);
 }
 
-@media screen and (min-width: 1024px) {
-  .page-content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 @media screen and (min-width: 769px) {
   .grid-col-1 {
     grid-template-columns: 0;
