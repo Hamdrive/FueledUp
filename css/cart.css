@@ -39,12 +39,12 @@
 
 /* Quantity trigger in card */
 .quantity-trigger {
-  width: 30px;
+  width: var(--size-13);
   height: 100%;
 }
 
 .quantity-input {
-  width: 40px;
+  width: var(--size-13);
   border: 1px solid var(--secondary-color);
   border-radius: var(--radius-large);
 }
@@ -118,6 +118,27 @@
 
   .card-btns {
     margin-top: 0;
+  }
+
+  .quantity .px-lg {
+    padding: 0 var(--size-7);
+  }
+
+  .quantity p {
+    font-size: var(--size-9);
+  }
+
+  .card-btns .btn {
+      white-space: normal;
+  }
+
+  .card-btns .btn-md {
+    padding: var(--size-5) var(--size-9)
+
+  }
+
+  .card-btns .my-1 {
+      margin: var(--size-5) 0;
   }
 }
 
