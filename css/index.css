@@ -1,5 +1,61 @@
 @import url("../styles.css");
 
+/* Search bar styles */
+.search-input {
+  flex-basis: 40%;
+}
+
+.search-input input {
+  padding: var(--size-5) var(--size-9) var(--size-5) var(--size-17);
+}
+
+.search-input .search-icon {
+  color: var(--color-grey);
+  font-size: var(--size-11);
+}
+
+
+/* Mobile search bar styles */
+.mob-search-input {
+  position: sticky;
+  top: 4rem;
+  z-index: 9999;
+  width: 100%;
+  background-color: var(--primary-extra-light-color);
+  margin-top: var(--size-5);
+}
+
+.mob-search-input input {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--size-5) var(--size-9);
+}
+
+
+/* Navbar styles */
+.nav-item:nth-child(n) {
+  margin: 0 var(--size-9);
+}
+
+.nav-logo {
+  margin: 0 var(--size-5);
+}
+
+
+/* Navbar icon badges styles */
+.top-right-icon {
+  top: 0;
+  right: 0;
+  transform: translate(25%, -50%);
+}
+
+
+/* Style icon for CTA on homepage */
+.rotate-icon {
+  transform: rotate(20deg);
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -129,6 +185,11 @@
   align-items: center;
 }
 
+.blur {
+  filter: opacity(40%);
+  height: auto;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -191,6 +252,30 @@
 
 .txt-wrap {
   white-space: normal;
+}
+
+
+/* Media queries for tablets and up */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .search-input {
+    flex-basis: 50%;
+  }
+}
+
+
+/* Media queries for medium mobiles and up */
+@media screen and (min-width: 481px) {
+  .mob-search-input {
+    display: none;
+  }
+
+  .search-input {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 480px) {
