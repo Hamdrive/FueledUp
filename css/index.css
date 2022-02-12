@@ -166,13 +166,21 @@
   gap: 10rem;
 }
 
-.sign-up-close-btn, .login-close-btn {
-    transform: translate(-100%, 100%);
-    cursor: pointer;
+.sign-up-close-btn,
+.login-close-btn {
+  transform: translate(-100%, 100%);
+  cursor: pointer;
 }
 
-.remove-card-btn, .wish-heart-btn {
-    transform: translate(-50%, 50%);
-    cursor: pointer;
-    z-index: 2;
+.remove-card-btn,
+.wish-heart-btn {
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media screen and (max-width: 350px) {
+  .footer .px-lg {
+    padding: 0 var(--size-7);
+  }
 }
