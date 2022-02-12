@@ -1,17 +1,5 @@
 @import url("./index.css");
 
-/* Page title */
-.page-title {
-  display: flex;
-  justify-content: center;
-}
-
-.page-content {
-  padding-top: var(--size-9);
-  padding-bottom: var(--size-9);
-}
-
-
 /* Card styles */
 .card {
   width: 100%;
@@ -52,6 +40,7 @@
 .card-btns {
   margin-top: var(--size-9);
 }
+
 
 /* Price total style */
 .price-total .txt-md, .total-message .txt-md {

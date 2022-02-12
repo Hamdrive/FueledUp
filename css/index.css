@@ -254,6 +254,17 @@
   white-space: normal;
 }
 
+/* Page title for Cart and Wishlist*/
+.page-title {
+  display: flex;
+  justify-content: center;
+}
+
+.page-content {
+  padding-top: var(--size-9);
+  padding-bottom: var(--size-9);
+}
+
 /* Alternate auth text Login/Signup */
 .alt-auth-txt {
   color: var(--primary-dark-color);
