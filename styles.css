@@ -5,7 +5,6 @@
   background-color: rgba(124, 58, 237, 0.2);
 }
 
-
 /* Hero section */
 .hero-section {
   position: relative;
@@ -31,12 +30,10 @@
   color: var(--color-white);
 }
 
-
 /* Highlight words */
 .imp-word {
   color: var(--primary-dark-color);
 }
-
 
 /* Category & Collection cards */
 .category {
@@ -78,7 +75,6 @@
   filter: opacity(90%);
 }
 
-
 /* Footer styling */
 .footer {
   background-color: var(--secondary-color);
@@ -89,7 +85,6 @@
 .footer-info {
   width: 100%;
 }
-
 
 /* Media query for medium mobiles and up */
 @media screen and (max-width: 480px) {
