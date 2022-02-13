@@ -1,5 +1,6 @@
 @import url("../styles.css");
 
+/* Basic layout styles of all pages */
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -10,10 +11,99 @@
   margin-top: auto;
 }
 
+/* Search bar styles */
+.search-input {
+  flex-basis: 40%;
+}
+
+.search-input input {
+  padding: var(--size-5) var(--size-9) var(--size-5) var(--size-17);
+}
+
+.search-input .search-icon {
+  color: var(--color-grey);
+  font-size: var(--size-11);
+}
+
+.hide-search {
+  display: none;
+}
+
+/* Mobile search bar styles */
+.mob-search-input {
+  position: sticky;
+  top: 4rem;
+  z-index: 9999;
+  width: 100%;
+  background-color: var(--primary-extra-light-color);
+  margin-top: var(--size-5);
+}
+
+.mob-search-input input {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--size-5) var(--size-9);
+}
+
+/* Navbar styles */
+.nav-item:nth-child(n) {
+  margin: 0 var(--size-9);
+}
+
+.nav-logo {
+  margin: 0 var(--size-5);
+}
+
+/* Navbar icon badges styles */
+.top-right-icon {
+  top: 0;
+  right: 0;
+  transform: translate(25%, -50%);
+}
+
+/* Style icon for CTA on homepage */
+.rotate-icon {
+  transform: rotate(20deg);
+}
+
+/* Grid styles */
+.grid-cols-auto {
+  grid-template-columns: repeat(auto-fit, 18rem);
+  grid-auto-flow: row;
+}
+
+.grid-cols-2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 10rem;
+}
+
+/* Flexbox styles */
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-basis-25 {
+  flex-basis: 25%;
+}
+
+/* Positioning styles */
 .pos-rel {
   position: relative;
 }
 
+/* Margin styles */
 .mt-1 {
   margin-top: var(--size-9);
 }
@@ -28,10 +118,6 @@
 
 .mt-5 {
   margin-top: var(--size-22);
-}
-
-.pl-2 {
-  padding-left: var(--size-13);
 }
 
 .mx-2 {
@@ -54,21 +140,31 @@
   margin-right: var(--size-15);
 }
 
+.mb-1 {
+  margin-bottom: var(--size-9);
+}
+
+.mb-sm {
+  margin-bottom: var(--size-5);
+}
+
+/* Padding styles */
+.pl-2 {
+  padding-left: var(--size-13);
+}
+
+/* Overflow styles */
 .ovy-scroll {
   overflow-y: scroll;
 }
 
-.border-r-2 {
-  border-right: 2px solid var(--secondary-color);
-}
-
+/* Button styles */
 .btn-md {
   padding: var(--size-5) var(--size-9);
 }
 
-.badge-count {
-  min-width: var(--size-11);
-  height: var(--size-11);
+.btn:hover {
+  transform: none;
 }
 
 .btn-cta {
@@ -78,6 +174,11 @@
 
 .btn-cta:hover {
   background-color: rgba(245, 158, 11, 0.7);
+}
+
+.btn-login {
+  background-color: var(--badge-yellow);
+  padding: var(--size-5) var(--size-9);
 }
 
 .btn-wish {
@@ -90,8 +191,9 @@
   background-color: var(--primary-extra-light-color);
 }
 
-.hide-search {
-  display: none;
+/* Border styles */
+.border-r-2 {
+  border-right: 2px solid var(--secondary-color);
 }
 
 .form-border {
@@ -99,84 +201,93 @@
   border-radius: var(--radius-extra-large);
 }
 
-.w-100 {
-  width: 100%;
+/* Badge on icon styles */
+.badge-count {
+  min-width: var(--size-11);
+  height: var(--size-11);
 }
 
-.mb-1 {
-  margin-bottom: var(--size-9);
-}
-
-.mb-sm {
-  margin-bottom: var(--size-5);
-}
-
-.mt-1 {
-  margin-top: var(--size-9);
-}
-
-.align-center {
-  align-items: center;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-basis-25 {
-  flex-basis: 25%;
-}
-
-.grid-cols-auto {
-  grid-template-columns: repeat(auto-fit, 18rem);
-  grid-auto-flow: row;
-}
-
-.txt-capitalize {
-  text-transform: capitalize;
-}
-
-.rating {
-  background-color: var(--primary-extra-light-color);
-  padding: var(--size-3) var(--size-5);
-  border-radius: var(--radius-large);
-}
-
-.strike-color {
-  color: var(--btn-error-color);
-}
-
-.grid-cols-2-1 {
-  grid-template-columns: 2fr 1fr;
-}
-
+/* Width styles */
 .w-60 {
   width: 60%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .max-width-1000 {
   max-width: 1000px;
 }
 
-.gap-3 {
-  gap: 3rem;
+/* General styles */
+.txt-capitalize {
+  text-transform: capitalize;
 }
 
-.gap-4 {
-  gap: 10rem;
+.txt-wrap {
+  white-space: normal;
 }
 
-.sign-up-close-btn,
-.login-close-btn {
-  transform: translate(-100%, 100%);
-  cursor: pointer;
+.strike-color {
+  color: var(--btn-error-color);
 }
 
+.blur {
+  filter: opacity(40%);
+  height: auto;
+}
+
+/* Card icon button styles */
 .remove-card-btn,
 .wish-heart-btn {
   transform: translate(-50%, 50%);
   cursor: pointer;
   z-index: 2;
+}
+
+/* Page title for Cart and Wishlist*/
+.page-title {
+  display: flex;
+  justify-content: center;
+}
+
+.page-content {
+  padding-top: var(--size-9);
+  padding-bottom: var(--size-9);
+}
+
+/* Alternate auth text Login/Signup */
+.alt-auth-txt {
+  color: var(--primary-dark-color);
+}
+
+/* Media queries for tablets and up */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .search-input {
+    flex-basis: 50%;
+  }
+}
+
+/* Media queries for medium mobiles and up */
+@media screen and (min-width: 481px) {
+  .mob-search-input {
+    display: none;
+  }
+
+  .search-input {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-product {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 350px) {

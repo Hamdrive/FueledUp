@@ -1,5 +1,6 @@
 @import url("./index.css");
 
+/* Sign up page styles */
 .sign-up-page {
   min-height: 80vh;
   position: relative;
@@ -15,9 +16,3 @@
   border-bottom: 2px solid var(--primary-dark-color);
   padding: var(--size-5);
 }
-
-.color-prim {
-  color: var(--primary-dark-color);
-}
-
-

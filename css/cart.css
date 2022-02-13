@@ -1,13 +1,6 @@
 @import url("./index.css");
 
-.btn:hover {
-  transform: none;
-}
-
-.txt-md {
-  font-size: 1.3rem;
-}
-
+/* Card styles */
 .card {
   width: 100%;
   flex-direction: row;
@@ -19,10 +12,19 @@
   height: 100%;
 }
 
+.card-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
 .card-brief {
   height: var(--size-21);
 }
 
+/* Quantity trigger in card */
 .quantity-trigger {
   width: var(--size-13);
   height: 100%;
@@ -34,38 +36,35 @@
   border-radius: var(--radius-large);
 }
 
-.card-info {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-
 .card-btns {
   margin-top: var(--size-9);
 }
 
+/* Price total style */
+.price-total .txt-md,
+.total-message .txt-md {
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 1024px) {
+  /* Grid column for large screen */
   .grid-cols-2-1 {
     grid-template-columns: none;
   }
 
+  /* Price table shows on top */
   .grid-reverse {
     order: -1;
+  }
+
+  /* Better layout for smaller screen */
+  .max-width-1000 {
+    max-width: 600px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .card-brief {
-    display: none;
-  }
-
-  .btn-cta,
-  .btn-wish {
-    font-size: var(--size-8);
-  }
-
+  /* Card styles for larger mobiles */
   .card {
     max-height: 18rem;
   }
@@ -74,12 +73,27 @@
     width: 70%;
   }
 
+  .card-brief {
+    display: none;
+  }
+
   .card-img {
     width: 30%;
+  }
+
+  .btn-cta,
+  .btn-wish {
+    font-size: var(--size-8);
   }
 }
 
 @media screen and (max-width: 480px) {
+  /* Card styles for smaller mobiles */
+  .card-title p {
+    margin-top: 0;
+    font-size: var(--size-10);
+  }
+
   .card-btns,
   .quantity {
     padding: var(--size-5);
@@ -87,11 +101,6 @@
 
   .card-btns {
     margin-top: 0;
-  }
-
-  .card-title p {
-    margin-top: 0;
-    font-size: var(--size-10);
   }
 
   .quantity .px-lg {
@@ -103,15 +112,22 @@
   }
 
   .card-btns .btn {
-      white-space: normal;
+    white-space: normal;
   }
 
   .card-btns .btn-md {
-    padding: var(--size-5) var(--size-9)
-
+    padding: var(--size-5) var(--size-9);
   }
 
   .card-btns .my-1 {
-      margin: var(--size-5) 0;
+    margin: var(--size-5) 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /* Ensure visibility on smallest screen */
+  .page-content {
+    padding-left: var(--size-9);
+    padding-right: var(--size-9);
   }
 }

@@ -1,5 +1,6 @@
 @import url("./index.css");
 
+/* Card styles */
 .card {
   width: 18rem;
   max-height: 25rem;
@@ -7,27 +8,15 @@
   justify-content: space-between;
 }
 
+/* Card button styles */
 .card-btns {
   justify-content: center;
   align-items: center;
   padding: var(--size-7);
 }
 
-.btn:hover {
-  transform: none;
-}
-
-.page-title {
-  display: flex;
-  justify-content: center;
-}
-
-.page-content {
-  padding-top: var(--size-9);
-  padding-bottom: var(--size-9);
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
+  /* Padding for small screens not required */
   .page-content {
     padding-left: 0;
     padding-right: 0;
@@ -35,20 +24,24 @@
 }
 
 @media screen and (min-width: 769px) {
+  /* Disable other grid cols */
   .grid-col-1 {
     grid-template-columns: 0;
   }
 
+  /* Footer grid stays intact */
   footer .grid-cols-2 {
     grid-template-columns: 0;
   }
 
+  /* Dynamic grid sizing for large screens */
   .grid-cols-auto {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 }
 
 @media screen and (max-width: 768px) {
+  /* Disable other grid cols */
   .grid-cols-auto {
     grid-template-columns: 0;
   }
@@ -57,21 +50,26 @@
     grid-template-columns: 0;
   }
 
+  /* Double column grid for tablets */
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(min-content, auto));
   }
 }
 
 @media screen and (max-width: 650px) {
+  /* Disable other grid cols */
   .grid-cols-auto {
     grid-template-columns: 0;
   }
+
+  /* Singular column grid for mobile */
   .grid-col-1 {
     grid-template-columns: minmax(min-content, auto);
   }
 }
 
 @media screen and (max-width: 360px) {
+  /* Ensure visibility on smallest screen */
   .page-content {
     padding-left: var(--size-9);
     padding-right: var(--size-9);

@@ -1,9 +1,11 @@
 @import url("css/index.css");
 
+/* Site wide background color */
 .wrapper {
   background-color: rgba(124, 58, 237, 0.2);
 }
 
+/* Hero section */
 .hero-section {
   position: relative;
   height: 90vh;
@@ -28,47 +30,18 @@
   color: var(--color-white);
 }
 
+/* Highlight words */
 .imp-word {
   color: var(--primary-dark-color);
 }
 
-.recent-products {
-  position: relative;
-}
-
-.products {
-  width: 100%;
-}
-
-.grid-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.footer {
-  background-color: var(--secondary-color);
-  color: var(--secondary-light-color);
-  font-size: var(--size-10);
-}
-
-.footer-info {
-  width: 100%;
-}
-
+/* Category & Collection cards */
 .category {
   width: 12rem;
   height: 12rem;
   background-color: var(--primary-extra-light-color);
   position: relative;
   overflow: hidden;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.blur {
-  filter: opacity(40%);
-  height: auto;
 }
 
 .cover-text {
@@ -102,79 +75,18 @@
   filter: opacity(90%);
 }
 
-.btn-outline {
-  outline: 2px solid var(--color-white);
-  color: var(--color-white);
+/* Footer styling */
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--secondary-light-color);
+  font-size: var(--size-10);
 }
 
-.mob-search-input {
-  position: sticky;
-  top: 4rem;
-  z-index: 9999;
+.footer-info {
   width: 100%;
-  background-color: var(--primary-extra-light-color);
-  margin-top: var(--size-5);
 }
 
-.search-input {
-    flex-basis: 40%;
-}
-
-.mob-search-input input {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  padding: var(--size-5) var(--size-9) ;
-}
-
-.search-input input{
-    padding: var(--size-5) var(--size-9) var(--size-5) var(--size-17) ;
-}
-
-.search-input .search-icon {
-    color: var(--color-grey);
-    font-size: var(--size-11);
-}
-
-.nav-item:nth-child(n) {
-    margin: 0 var(--size-9);
-}
-
-.nav-logo {
-    margin: 0 var(--size-5);
-}
-
-.btn-login {
-    background-color: var(--badge-yellow);
-    padding: var(--size-5) var(--size-9);
-}
-
-.top-right-icon {
-    top: 0;
-    right: 0;
-    transform: translate(25%, -50%);
-}
-
-@media screen and (min-width: 481px) {
-  .mob-search-input {
-    display: none;
-  }
-
-  .search-input {
-      display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .nav-list {
-    display: none;
-  }
-
-  .search-input {
-    flex-basis: 50%;
-}
-}
-
+/* Media query for medium mobiles and up */
 @media screen and (max-width: 480px) {
   .category-list div:nth-child(n + 4) {
     display: none;
