@@ -153,6 +153,10 @@
   padding-left: var(--size-13);
 }
 
+.pr-4 {
+  padding-right: var(--size-21);
+}
+
 /* Overflow styles */
 .ovy-scroll {
   overflow-y: scroll;
@@ -255,6 +259,25 @@
 .page-content {
   padding-top: var(--size-9);
   padding-bottom: var(--size-9);
+}
+
+/* Cursor pointer */
+.pointer {
+  cursor: pointer;
+}
+
+/* Input visibility toggle */
+.input-toggle i {
+  right: 0;
+  top: 50%;
+  transform: translate(-25%, -50%);
+  color: var(--primary-dark-color);
+  padding: var(--size-5);
+  border-radius: 50%;
+}
+
+.input-toggle i:hover {
+  background-color: var(--primary-extra-light-color);
 }
 
 /* Alternate auth text Login/Signup */
