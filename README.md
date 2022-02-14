@@ -24,3 +24,7 @@ Check out the currently live pages here:
 - [Login page](https://fueledup.netlify.app/pages/login.html)
 
 ---
+
+## FueledUp E-commerce Store Overview
+
+![fueledup e-commerce store demo gif](assets/gif/fueledup-demo.gif)
