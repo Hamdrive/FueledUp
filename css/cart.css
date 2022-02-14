@@ -12,6 +12,10 @@
   height: 100%;
 }
 
+.card-img img{
+  object-fit: contain;
+}
+
 .card-info {
   width: 60%;
   display: flex;

@@ -38,11 +38,11 @@
 }
 
 .card-img {
-  height: 150px;
+  height: 9.5rem;
 }
 
 .card-img img {
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .card-brief {

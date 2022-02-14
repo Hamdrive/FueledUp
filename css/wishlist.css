@@ -8,6 +8,15 @@
   justify-content: space-between;
 }
 
+.card-img {
+  height: 9.5rem;
+}
+
+.card-img img{
+  object-fit: contain;
+}
+
+
 /* Card button styles */
 .card-btns {
   justify-content: center;
